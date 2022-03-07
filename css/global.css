@@ -1,0 +1,121 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Lato&family=Open+Sans:ital,wght@0,400;0,800;1,400&family=Roboto&display=swap');
+
+html {scroll-behavior:smooth;}
+body {background:#fff; color:#393939; font-family: 'Open Sans', sans-serif; font-size:14px; font-weight:400; line-height:1.6;}
+
+.Bor:after {border-bottom:1px solid #c42c32; content:"";display:block; margin:22px auto 30px auto; padding-bottom:0px; width:75px;}
+
+.row.divider > [class*='col-']:before,.row.divider > [class*='col-']:after {background:#fff; bottom: 0; content: " "; left: 0; position: absolute; width: 1px; top: 0;}
+.row.divider > [class*='col-']:before {left: 0;}
+.row.divider > [class*='col-']:after {right:0px;left:auto;}
+.row.divider > [class*='col-']:first-child:before,.row.divider > [class*='col-']:last-child:after {display: none;}
+
+@font-face {
+    font-family: 'Bringshoot';
+    src: url('../fonts/Bringshoot.woff2') format('woff2'),
+        url('../fonts/Bringshoot.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.font-open {font-family: 'Open Sans', sans-serif;}
+.font-roboto {font-family: 'Roboto', sans-serif;}
+.font-josefin {font-family: 'Josefin Sans', sans-serif;}
+.font-lato {font-family: 'Lato', sans-serif;}
+.font-bringshoot {font-family: 'Bringshoot';}
+	
+*, *:focus {outline:none !important; transition:all 0.3s ease 0s;}
+
+a {text-decoration:none !important; color:#393939;} a:hover{color:#c42c32;}
+p{margin-bottom:20px;} .nomrgn{margin:0px !important;}
+
+.breadcrumb{color:#818181; margin:0px; background-color:transparent;padding:0 0 15px; font-size:12px; border-bottom:solid 1px #dddddd;}
+.breadcrumb>li+li:before{content:"\27A4";color:#818181; margin:0 10px;}
+.breadcrumb a{color:#487201;}
+
+/******* Helpers ********************************************************************/
+.ImgFade{background-color:#000;}
+.ImgFade img{opacity: 0.6; filter: alpha(opacity=60); /* For IE8 and earlier */}
+
+hr{background-color:#41362d;}
+
+/***************************/
+.btn{moz-transition: all 0.3s ease-in; -webkit-transition: all 0.3s ease-in; -o-transition: all 0.3s ease-in; transition: all 0.3s ease-in;text-decoration:none !important; font-weight:400; font-size:11px; padding:16px 58px; font-family: 'Lato', sans-serif; vertical-align:top; border-radius:0px; box-shadow:none !important; text-transform:uppercase; letter-spacing:.020em;}
+
+
+.btn-danger{border-color:#c42c32; color:#fff !important;  background-color: #c42c32;} 
+.btn-danger:hover,.btn-danger.focus,.btn-danger:focus{background-color: #121212; border-color:#121212;color:#fff !important;}
+
+.btn-dark{border-color:#121212; color:#fff !important;  background-color: #121212;} 
+.btn-dark:hover,.btn-dark.focus,.btn-dark:focus{background-color: #c42c32; border-color:#c42c32;color:#fff !important;}
+
+.btn.btn-sm{padding: 16px 30px;}
+.btn.btn-lg{padding: 16px 35px;}
+/*****************************/
+.fw-normal{font-weight:400 !important;}
+.fw-semi{font-weight:600 !important;}
+.fw-extrabold{font-weight:800 !important;}
+
+.fs-12{font-size:12px !important;}
+.fs-16{font-size:16px !important;}
+.fs-19{font-size:19px !important;}
+.fs-21{font-size:21px !important;}
+.fs-50{font-size:50px !important;}
+.fs-200{font-size:200px !important;}
+
+.lh-1{line-height:1 !important;}
+.lh-15{line-height: 1.35 !important;}
+.lh-12{line-height: 1.2 !important;}
+
+.ls-2{letter-spacing:.2em !important;}
+.ls-20{letter-spacing:.020em !important;}
+
+.bg-danger {background:#c42c32 !important;}
+.bg-light {background:#f2f2f2 !important;}
+.bg-dark {background:#171717 !important;}
+.bg-secondary {background:#121212 !important;}
+/*****************************/
+.text-dark {color:#1b1a1a !important;} 
+.text-danger {color:#c42c32 !important;}
+.text-secondary {color:#171717 !important;}
+.text-primary {color:#161616 !important;}
+.text-info {color:#000 !important;}
+/*****************************/
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {}
+h1, .h1 {font-size:45px;}
+h2, .h2 {font-size:35px;}
+h3, .h3 {font-size:18px;}
+h4, .h4 {font-size:16px;}
+h5, .h5 {font-size:12px;}
+
+/*******************************************************************/
+input.form-control,input.form-control:focus {font-size: 13px; height: calc(2.5em + 1.2rem + 2px); box-shadow:none;font-family: 'Source Sans Pro', sans-serif;}
+select.form-control {font-size:13px; height:calc(1.5em + 1.2rem + 2px);}
+textarea.form-control {font-size:13px; resize:none;}
+textarea.form-control:not([rows]) {height:136px;}
+.form-control::-moz-placeholder {color:#272727; opacity: 1;}
+
+/**************************************************************/
+.MainBanner .mask{position:absolute; top:0px; right:0%; left:0%; z-index:99; background:url(../images/bnr_shadow.png) repeat-x top; min-height:100%;}
+.MainBanner .carousel-indicators {z-index:999; bottom:38px;}
+.MainBanner .carousel-indicators li {background-color:#fff; opacity:1;border-radius:50%; width:7px; height:7px; margin:0px 6px;} 
+.MainBanner .carousel-indicators .active {background-color:transparent !important;width:14px; height:14px; border:solid 1px #fff; margin-top:5px;}
+
+
+/****************************************************************/
+.Borderhd {line-height: 0.5;text-align: center;}
+.Borderhd span {display: inline-block;position: relative;  }
+.Borderhd span:before,.Borderhd span:after {content: "";position: absolute; border-bottom-color:#b8b8b8 !important; border-bottom:double; border-width:4px; top:8px;width:50%;}
+.Borderhd span:before {right: 100%;margin-right:45px;}
+.Borderhd span:after {left: 100%;margin-left:45px;}
+
+
+/***********************************************************************/
+ul.orange li {color: #3c3c3c;list-style: none;position: relative;}
+ul.orange li::before {color: #f69322; content: "\2022"; font-size:1.5em; position: absolute; top: -8px; left: -20px;}
+
+/********** Back To Top Button ***************************************************************************************************/
+#scroll {position:fixed; right:10px; bottom:10px; z-index:99999; cursor:pointer; width:45px; height:45px; text-align:center; line-height:43px; background:#c42c32; color:#fff !important;}
+#scroll:hover {opacity:.7;}
